@@ -11,6 +11,11 @@ body {
     width: 100px;
   }
 }
+
+iframe {
+  margin: 0 auto;
+  text-align: center;
+}
 .navlist {
   display: flex;
   margin-left: 40%;
@@ -175,11 +180,49 @@ nav {
     transition: 05s ease-out;
   }
 }
+.intro2 {
+  margin-top: 70px;
+  margin-bottom: 60px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  width: 100%;
+  h1 {
+    font-size: 60px;
+  }
+
+  .description {
+    width: 40%;
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+    // margin-left: 2%;
+  }
+  .video {
+    width: 60%;
+    margin-top: 50px;
+    margin: 0 auto;
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+  }
+}
+
+.intro {
+  margin-top: 70px;
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  h1 {
+    font-size: 60px;
+  }
+}
 // Langing page
 .landing {
   img{
     width: 100%;
-    filter: brightness(65%);
+    filter: brightness(55%);
   }
   margin-top: 2px;
   width: 100%;
