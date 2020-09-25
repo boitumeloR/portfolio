@@ -1,4 +1,4 @@
-import { Component, ElementRef, Inject, OnInit, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, Inject, OnInit, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -11,7 +11,7 @@ gsap.registerPlugin(ScrollTrigger);
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit {
+export class AppComponent implements OnInit, AfterViewInit {
   opened = false;
   loggedIn = false;
   socialLogin = false;
@@ -21,6 +21,32 @@ export class AppComponent implements OnInit {
   @ViewChild('menu', { static: true }) menu: ElementRef<HTMLDivElement>;
   ngOnInit(): void {
     this.initAnimations();
+    this.observeNav();
+  }
+
+  ngAfterViewInit(): void {
+    // Called after ngAfterContentInit when the component's view has been initialized. Applies to components only.
+    // Add 'implements AfterViewInit' to the class.
+    this.observeNav();
+  }
+
+  observeNav() {
+    const header = document.querySelector('.sticky');
+    const intro = document.querySelector('.image');
+
+    const sectionOneObserver = new IntersectionObserver((entries: IntersectionObserverEntry[]) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) {
+          console.log('Im intersecting');
+          header.classList.add('nav-white');
+        } else {
+          console.log('im not');
+          header.classList.remove('nav-white');
+        }
+      });
+    }, { rootMargin: '-100px 0px 0px 0px'});
+
+    sectionOneObserver.observe(intro);
   }
 
   toggleBurger() {
