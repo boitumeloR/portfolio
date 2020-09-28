@@ -57,6 +57,18 @@ export class AppComponent implements OnInit, AfterViewInit {
     $element.scrollIntoView({behavior: 'smooth', block: 'start', inline: 'nearest'});
   }
 
+  scrollAnimations() {
+    gsap.to(this.document.querySelector('.video'), {
+      scrollTrigger: {
+        trigger: this.document.querySelector('.video'),
+        start: 'bottom top',
+      } as gsap.plugins.ScrollTriggerInstanceVars,
+      color: '#fff',
+      duration: 2.5,
+      y: 75
+    });
+  }
+
   initAnimations() {
     gsap.from(document.querySelector('.text'), {
       duration: 2.2,
