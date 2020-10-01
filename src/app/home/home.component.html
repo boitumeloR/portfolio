@@ -1,0 +1,186 @@
+<div class="image">
+    <nav class="sticky" #menu>
+      <div class="logo">
+        <img src="assets/images/Logo1.png" alt="">
+      </div>
+      <div class="navlist">
+          <ul>
+              <li>
+                <a class="notify" [routerLink]="['/CV']">
+                  <span>Download My CV</span>
+                  <span class="badge" ></span>
+                </a>
+              </li>
+          </ul>
+      </div>
+    </nav>
+    <div class="text">
+      <div>
+        <h1>
+          Hello, My Name Is Boitumelo Rampete.
+          I'm a Software Engineer
+        </h1>
+      </div>
+    </div>
+    <div class='icon-scroll' (click)="Scroll(target)">
+    </div>
+    <img class="back" src="assets/images/landing2.jpg" alt="back">
+  </div>
+  <section class="intro" #target>
+    <h1>Here's a Video Introduction</h1>
+  </section>
+  
+  <div class="intro2">
+    <div class="description">
+      <h1>Summary</h1>
+      <p>I started coding at the age of 16. I've learnt a lot over the years but still remain teachable. The software space is a very large one
+          and I aim to learn as much as I can and give back to the software community as much as possible.
+      </p>
+      <img src="assets/images/coding.svg" alt="Boitumelo Coding">
+      <div>
+        <h2>Knowledge Areas</h2>
+        
+        <h6>C#.NET Programming</h6>
+        <h6>Python For Data Science (Beginner)</h6>
+        <h6>JavaScript / TypeScript</h6>
+        <h6>Database Design & SQL</h6>
+        <h6 class="last">Angular Frontend Framework</h6>
+      </div>
+    </div>
+    <div class="video">
+      <iframe width="100%" height="720" src="https://www.youtube.com/embed/5tLwZ_LDeK0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+  <section class="intro">
+    <h1>A Few Projects I've Worked On</h1>
+  </section>
+  
+  <div class="projects">
+    <div class="social-box">
+      <div class="container">
+           <div class="row justify-content-center">
+               
+                  <div class="col-lg-4 col-xs-12 text-center">
+                      <div class="box">
+              <i class="fa fa-code" aria-hidden="true"></i>
+                          <div class="box-title">
+                              <h3>Portfolio Project</h3>
+                          </div>
+                          <div class="box-text">
+                              <span>In this project I used basic HTML and CSS to build out my portfolio. I used the powerful JS animation tool, GSAP and the JS Intersection Observer API 
+                  to make the animations on load.
+                  This project really helped me solidify layout concenpts and RWD with CSS Flexbox. </span>
+                          </div>
+                          <div class="box-btn">
+                              <a href ="https://github.com/boitumeloR/portfolio" target="_blank" class="btn btn-outline-secondary">View Code</a>
+                          </div>
+                       </div>
+                  </div>	 
+                  
+                   <div class="col-lg-4 col-xs-12  text-center">
+                      <div class="box">
+              <i class="fa fa-code" aria-hidden="true"></i>
+                          <div class="box-title">
+                              <h3>CRUD ASP.NET Web API </h3>
+                          </div>
+                          <div class="box-text">
+                              <span>In this project I built out an API using ASP Web API to facilitate my CRUD frontends with an SQL SERVER database.
+                  This project helped me learn the fundamentals of integrating an angular frontend with an external API using HTTP.
+                </span>
+                          </div>
+                          <div class="box-btn">
+                <a class="btn btn-outline-secondary" href = "https://github.com/boitumeloR/HWAssignmentRepo" target="_blank">View Code</a>
+                          </div>
+                       </div>
+                  </div>	 
+                  
+                   <div class="col-lg-4 col-xs-12 text-center">
+                      <div class="box">
+              <i class="fa fa-code" aria-hidden="true"></i>
+                          <div class="box-title">
+                              <h3>Angular CRUD app</h3>
+                          </div>
+                          <div class="box-text">
+                              <span>This application connects to my ASP Web API backend which helps facilitate creating, reading, updating and deleting information all while 
+                  authenticating and authorising users using sessions which refresh on every API request.
+                </span>
+                          </div>
+                          <div class="box-btn">
+                <a class="btn btn-outline-secondary" href = "https://github.com/boitumeloR/HWAssignment02Front" target="_blank">View Code</a>
+                          </div>
+                       </div>
+          </div>
+          
+          <div class="col-lg-4 col-xs-12 text-center">
+                      <div class="box">
+              <i class="fa fa-code" aria-hidden="true"></i>
+                          <div class="box-title">
+                              <h3>Ionic Angular CRUD app</h3>
+                          </div>
+                          <div class="box-text">
+                              <span>This application connects to my ASP Web API backend which helps facilitate creating, reading, updating and deleting information all while 
+                  authenticating and authorising users using sessions which refresh on every API request. The sole purpose of this project was to learn how to use one backend for multiple
+                  platforms.
+                </span>
+                          </div>
+                          <div class="box-btn">
+                <a class="btn btn-outline-secondary" href = "https://github.com/boitumeloR/IonicHWCordova"target="_blank">View Code</a>
+                          </div>
+                       </div>
+          </div>
+          
+          <div class="col-lg-4 col-xs-12 text-center">
+                      <div class="box">
+              <i class="fa fa-code" aria-hidden="true"></i>
+                          <div class="box-title">
+                              <h3>Ionic News app</h3>
+                          </div>
+                          <div class="box-text">
+                              <span>This application connects to an online API (NewsAPI) and presents the news articles in the form of cards in the app.  The sole purpose of this project was to learn how to use http to get dynamic data
+                  on an Ionic application.
+                </span>
+                          </div>
+                          <div class="box-btn">
+                <a class="btn btn-outline-secondary" href = "https://github.com/boitumeloR/IonicNewsApp" target="_blank">View Code</a>
+                          </div>
+                       </div>
+                  </div>
+          </div>		
+      </div>
+  </div>
+  </div>
+  <div class="footer">
+    <h1>Find Me: </h1>
+    <div class="social-box">
+      <div class="container">
+           <div class="row justify-content-center">
+               
+                  <div class="col-lg-4 col-xs-12 text-center">
+                      <div class="box">
+                          <i class="fa fa-linkedin fa-3x" aria-hidden="true"></i>
+                          <div class="box-title">
+                              <h3>LinkedIn</h3>
+                          </div>
+                          <div class="box-btn">
+                              <a href="https://www.linkedin.com/in/boitumelo-rampete-457108176/" target="_blank">Go</a>
+                          </div>
+                       </div>
+                  </div>	 
+                  
+                   <div class="col-lg-4 col-xs-12 text-center">
+                      <div class="box">
+                          <i class="fa fa-github fa-3x" aria-hidden="true"></i>
+                          <div class="box-title">
+                              <h3>Github</h3>
+                          </div>
+                          <div class="box-btn">
+                              <a href="https://github.com/boitumeloR" target="_blank">Go</a>
+                          </div>
+                       </div>
+                  </div>
+          
+          </div>		
+      </div>
+  </div>
+  </div>
+  
